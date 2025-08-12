@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from '../styles.module.css';
 
 export default function Header() {
+  
     return (
         <>
           <header className={styles.header}>
@@ -13,13 +14,13 @@ export default function Header() {
                     <Link to="/">Home</Link>
                   </li>
                   <li className={styles.link}>
-                    <Link to="Shop">Shop</Link>
+                    <Link to="/shop">Shop</Link>
                   </li>
                 </ul>
               </nav>
               <input type="text" className={styles.search} />
               <div className={styles.cart}>
-                <Link to="Cart"><i className="fa-solid fa-cart-shopping fa-xl"></i></Link>
+                <Link to="/cart"><i className="fa-solid fa-cart-shopping fa-xl"></i></Link>
               </div>
             </div>
           </header>
