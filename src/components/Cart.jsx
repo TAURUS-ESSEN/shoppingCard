@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import styles from '../styles.module.css';
 export default function Card() {
     const {cart, setCart } = useOutletContext();
     console.log(cart);
@@ -20,13 +22,24 @@ export default function Card() {
         console.log('products', products)
     }, [products])
  
- return (<>
-    {cart.length >0  &&  (
-    <ul>
-    {products.map(product=> {
-        return <li><img src={product.image} alt={product.title} width='100px' />{product.title} {product.price}</li>
-    })}
-    </ul>
-    )}
-    </>)
+ return (
+    <div> 
+        {cart.length === 0 && (
+           <h4> Shopping Cart is empty</h4>
+        )}
+
+        <div className={styles.cartList}>
+            
+            <ul>
+                {products.map(product=> {
+                    return <Link to={`/shop/product/${product.id}`} state={{ product }}>
+                        <li><img src={product.image} alt={product.title} width='100px' />{product.title} {product.price}$</li></Link>
+                })}
+            </ul>
+            
+        </div>
+        <div>
+            dfds
+        </div> 
+    </div>)
 }

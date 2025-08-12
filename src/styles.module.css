@@ -87,7 +87,7 @@
     flex-wrap: wrap;
 }
 
-.card {
+.cart{
     display: flex;
     width: 25%;
     flex-direction: column;
@@ -100,19 +100,19 @@
     box-shadow: 0 0 5px rgb(146, 146, 146);
 }
 
-.cardImage {
+.cartImage {
     /* max-width: 180px; */
     padding: 1em;
     border: 1px solid orange;
     border-radius: 5px;
 }
 
-.cardImage img {
+.cartImage img {
     width: 100%;
     max-height: 250px;
 }
 
-.addToCard {
+.addToCart {
     background-color: black;
     color: white;
     margin-left: 1em;
