@@ -1,0 +1,123 @@
+.header {
+    /* background-color: rgb(195, 184, 184); */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+}
+
+.flex {
+    display: flex;
+    min-width: 200px;
+    /* justify-content: space-evenly; */
+    background-color: aqua;
+    
+}
+
+.link {
+    list-style-type: none;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(162, 9, 9);
+}
+
+.search {
+    margin: 0.5em;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: 1px solid rgba(211, 211, 211, 0.758);
+    min-width: 300px;
+}
+
+.logo {
+    padding: 1em;
+    /* background-color: aquamarine; */
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgb(197, 113, 5);
+}
+
+.cart {
+    padding: 1em;
+    background-color: aquamarine;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: aqua;
+    /* position: absolute; */
+    /* bottom: 0; */
+    padding: 1rem;
+}
+
+.werbung {
+    min-width: 600px;
+    min-height: 500px;
+    border-radius: 10px;
+    background-color: brown;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.shopContainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid gray;
+}
+
+.shopCategories {
+    background-color: orange;
+    min-width: 200px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.productsList {
+    display: flex;
+    justify-content: space-evenly;
+    gap:1em;
+    /* padding: 1em; */
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap:0.5em;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(146, 146, 146);
+}
+
+.cardImage {
+    /* max-width: 180px; */
+    padding: 1em;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.cardImage img {
+    width: 100%;
+    max-height: 250px;
+}
+
+.addToCard {
+    background-color: black;
+    color: white;
+    margin-left: 1em;
+}
+
+.buttons {
+    display: flex; 
+}
