@@ -2,12 +2,13 @@ import { useState, useEffect } from "react"
 import styles from '../styles.module.css';
 import CategoryFilter from './CategoryFilter';
 import ProductsList from './ProductsList';
+import { useOutletContext } from "react-router-dom";
 
 export default function Shop() {
     const [products, setProducts] = useState([]);
     const [category, setCategory] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState([]);
-    const [cart, setCart] = useState([]);
+     const { cart, setCart } = useOutletContext(); 
 
     useEffect(() => {
         if (products.length === 0) {

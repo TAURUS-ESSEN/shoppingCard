@@ -3,7 +3,7 @@ import styles from '../styles.module.css';
 
 export default function ProductsList({products, selectedCategory, cart, setCart}) {
     function addToCard(id) {
-        setCart(prev => [...prev, id]);
+        setCart(prev => [...prev, { id, qty: 1 }]);
     }
 
 
